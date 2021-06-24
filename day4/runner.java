@@ -4,6 +4,7 @@ public class runner {
 public static void main(String[] args) {
 	employeepresent emp=new employeepresent();
 	emp.wagecaluclation();
-	
+	snakesandladders sl=new snakesandladders();
+	sl.snakesAndLadders();
 }
 }
