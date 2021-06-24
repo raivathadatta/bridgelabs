@@ -8,8 +8,11 @@ public class LeapYear extends Get{
 		// TODO Auto-generated method stub
 		System.out.println("enrrter year");
 		int year=sc.nextInt();
-		
+		String s=""+year;
+		if(s.length()==4)
 		print(year);
+		else
+			System.out.println("somthing went wrong year should be 4 vlaues ");
 	}
 	
 	protected void print(int year) {
