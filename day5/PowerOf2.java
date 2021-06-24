@@ -7,6 +7,8 @@ public class PowerOf2 extends LeapYear{
 		System.out.println("enter a number");
 		int num = sc.nextInt();
 		int power=1;
+		
+			
 		if(0<num && num<31)
 			while(num>0){
 				power*=2;
