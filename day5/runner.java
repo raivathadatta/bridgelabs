@@ -18,12 +18,14 @@ public class runner {
 		8. Java Program to Check Whether a Number is Even or Odd
 		9. Java Program to Check Whether an Alphabet is Vowel or Consonant
 		10. Java Program to Find the Largest Among Three Numbers*/
-Programs p=new Programs();
+/*Programs p=new Programs();
 p.alphabetIsVoweloConsonant();
 p.largestAmongThreeNumbers();
 p.quotientAndRemainder();
 p.numberisEvenorOdd();
-p.swapTwoNumbers();
+p.swapTwoNumbers();*/
+	//	twoDarray td=new twoDarray();
+		
 
 	
 	}
