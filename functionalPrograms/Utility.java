@@ -4,8 +4,8 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Utility {
-	public Scanner sc = new Scanner(System.in);
-	public int getValue() {
+	public static Scanner sc = new Scanner(System.in);
+	public static int getValue() {
 		// TODO Auto-generated method stub
 		
 		int num=sc.nextInt();
@@ -14,7 +14,7 @@ public class Utility {
 
 	
 
-	public Double getDouble() {
+	public static Double getDouble() {
 		// TODO Auto-generated method stub
 		double d=sc.nextDouble();
 		return d;
