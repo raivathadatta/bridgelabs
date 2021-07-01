@@ -17,10 +17,10 @@ public static void main(String[] args) {
 	for(int i=0;i<workingDays;i++) {
 		if(totalHoursPresent<=totalHours) {
 	
-		System.out.println(i);
+		//System.out.println(i);
 		double a= Math.random();
 		int b=(int) Math.round(a);
-		System.out.println(b);
+		System.out.println(b+"randome");
 		switch (b) {
 		case 0: {
 			break;
