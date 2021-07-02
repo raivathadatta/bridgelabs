@@ -31,9 +31,12 @@ System.out.println("Enter Total Working Hours");
 employee.setWorkingHours(getValue());
 System.out.println("Enter Working hours per Day");   
 employee.setWorkingHours_Day(getValue());
+<<<<<<< Updated upstream
 Runner runner=new Runner();
 runner.employeeSalary();
 EmployeeWages employee2=new EmployeeWages();
+=======
+>>>>>>> Stashed changes
 
 
 
