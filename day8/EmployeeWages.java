@@ -1,54 +1,61 @@
 package day8;
 
 public class EmployeeWages {
-	int workDays=20;
-	int hourlyWage=20;
-	int workingHours=8;
-     int totalWage=0;
-	//int totalHours=100;
- 	static	int totalHoursPresent=0;
-	static int totalDaysPresent=0;
-	int wagePerday=0;
- private int present() {
-	double a= Math.random();
-	int b=(int) Math.round(a);
-	switch (b) {
-	case 0: {
-		return 0;
-		}
-	case 1: {
-		return 1;
-	}
-	default:
-		throw new IllegalArgumentException("Unexpected value: " + b);
+	int workDays;
+	int hourlyWage;
+	int workingHours;
+	// int totalWage;
+	// int totalHours=100;
+	int partTmeHours;
+	int toalWorkingHours;
+	int totalWorkingDays;
+
+	public int getWorkDays() {
+		return workDays;
 	}
 
-}
-private int check() {
-	while(totalHoursPresent<=100||totalDaysPresent<=20) {
-int present=present();
-	if(present==1) {
-		double a= Math.random();
-		int b=(int) Math.round(a);
-		switch (b) {
-		case 0:
-			totalHoursPresent+=workingHours;
-			totalDaysPresent++;
-			
-			break;
-        case 1:
-			totalHoursPresent+=workingHours;
-			break;
-		default:
-			break;
-		}
+	public void setWorkDays(int workDays) {
+		this.workDays = workDays;
 	}
-	
-}
-	return totalHoursPresent;
+
+	public int getHourlyWage() {
+		return hourlyWage;
 	}
-public void employeeSalary() {
-	int salary=hourlyWage*check();
-	System.out.println(salary);
-}
+
+	public void setHourlyWage(int hourlyWage) {
+		this.hourlyWage = hourlyWage;
+	}
+
+	public int getWorkingHours() {
+		return workingHours;
+	}
+
+	public void setWorkingHours(int workingHours) {
+		this.workingHours = workingHours;
+	}
+
+	public int getPartTmeHours() {
+		return partTmeHours;
+	}
+
+	public void setPartTmeHours(int partTmeHours) {
+		this.partTmeHours = partTmeHours;
+	}
+
+	public int getToalWorkingHours() {
+		return toalWorkingHours;
+	}
+
+	public void setToalWorkingHours(int toalWorkingHours) {
+		this.toalWorkingHours = toalWorkingHours;
+	}
+
+	public int getTotalWorkingDays() {
+		return totalWorkingDays;
+	}
+
+	public void setTotalWorkingDays(int totalWorkingDays) {
+		this.totalWorkingDays = totalWorkingDays;
+	}
+
 }

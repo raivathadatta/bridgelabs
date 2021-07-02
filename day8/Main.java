@@ -23,16 +23,19 @@ EmployeeWages employee=new EmployeeWages();
 System.out.println("enter HourlyWages");
 employee.setHourlyWage(getValue());
 System.out.println("Enter number part time Hours ");
-employee.setPartTimeHours(getValue());
-employee.setTotalWorkingHours(getValue());
+employee.setPartTmeHours(getValue());
+System.out.println("Enter total working Hours");
+employee.setToalWorkingHours(getValue());
 System.out.println("Enter number of Working Days");
 employee.setWorkDays(getValue());
-System.out.println("Enter Total Working Hours");
+System.out.println("Enter Total Working Hours per day");
 employee.setWorkingHours(getValue());
 System.out.println("Enter Working hours per Day");   
-employee.setWorkingHours_Day(getValue());
+employee.setWorkingHours(getValue());
+System.out.println("Enter Total Woking Hours");
+employee.setToalWorkingHours(getValue());
 Runner runner=new Runner();
-runner.employeeSalary();
+runner.employeeSalary(employee);
 EmployeeWages employee2=new EmployeeWages();
 
 
