@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 public static void main(String[] args) {
-	Runner ew=new Runner();
+	//Runner ew=new Runner();
 //       // ew.employeeSalary();
 //	System.out.println("enter HourlyWages");
 //        ew.setHourlyWage(getValue());
@@ -19,30 +19,40 @@ public static void main(String[] args) {
 //        System.out.println("enter total woking hours");
 //        ew.setTotalWorkingHours(getValue());
 //        ew.employeeSalary();
+	
+	
 EmployeeWages employee=new EmployeeWages();
+System.out.println("ENTER COMPANY NAME");
+employee.setCompanyName(getString());
 System.out.println("enter HourlyWages");
 employee.setHourlyWage(getValue());
 System.out.println("Enter number part time Hours ");
 employee.setPartTimeHours(getValue());
+System.out.println("Enter total Working Hours");
 employee.setTotalWorkingHours(getValue());
 System.out.println("Enter number of Working Days");
 employee.setWorkDays(getValue());
 System.out.println("Enter Total Working Hours");
-employee.setWorkingHours(getValue());
-System.out.println("Enter Working hours per Day");   
+
 employee.setWorkingHours_Day(getValue());
-<<<<<<< Updated upstream
+
+
 Runner runner=new Runner();
-runner.employeeSalary();
+runner.employeeSalary(employee);
+System.out.println(employee.toString());
 EmployeeWages employee2=new EmployeeWages();
-=======
->>>>>>> Stashed changes
 
 
 
 }
+static Scanner scanner=new Scanner(System.in);
+private static String getString() {
+	// TODO Auto-generated method stub
+String str=  scanner.nextLine(); 
+	return str;
+}
 public static int getValue() {
-	Scanner scanner=new Scanner(System.in);
+	
 	int send=scanner.nextInt();
 	return send;
 }
