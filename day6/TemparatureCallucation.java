@@ -2,7 +2,7 @@ package day6;
 
 import java.util.Scanner;
 
-import linkedlist.main;
+import linkedlist.Main;
 
 public class TemparatureCallucation {
 public static void main(String[] args) {
